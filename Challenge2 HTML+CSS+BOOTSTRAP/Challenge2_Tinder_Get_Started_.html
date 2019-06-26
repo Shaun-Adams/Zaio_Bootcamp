@@ -10,45 +10,67 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <style>
+    	.row div{padding: 20px 10px; }
+    </style>
     
 
 	</head>
 	
 	<body>
 
-		<div class="card"> 
-
+		
 			<div class="background">
-				<!Tinder background image>
-				<img src="Tinder-logo.jpg" alt="background">
+				<!--Tinder background image-->
+				<img class="card-img img-fluid" src="Tinder-logo.jpg" alt="Responsive image">
 			</div>
 
-			<div class="container">
-				<!   Tinder logo on top of card    Rember to fix>
-				<img src="tinder.png" width="20%">
+			<!-- white card-->
+			 
+				<div class="container card-img-overlay text-center bg-white w-50 position-absolute margin-top: 25">
 
-				<!Heading>
-				<h3>GET STARTED</h3>
+					<!--tinder logo-->
+					<img src="tinder.png" width="20%">
 
-				<!paragraph with some underline words>
-				<p>By clicking log in, you agree with our <u> Terms,Privacy, Policy </u> and <u> Cookie Policy </u> </p>
+				<!--Heading-->
+					<h3><b>GET STARTED</h3></b>
 
-				<!Loggin in button>
-				<button class="FACEBOOK" >LOG IN WITH FACEBOOK</button>
+				<!--paragraph with some underline buttons-->
+					<p>By clicking log in, you agree with our 
+					<button type="button" class="btn btn-link"><u>Terms</u></button>, 
+					<button type="button" class="btn btn-link"><u>Privacy</u></button>,
+					<button type="button" class="btn btn-link"><u>Policy</u></button>
+					and 
+					<button type="button" class="btn btn-link"><u>Cookie Policy</u></button> </p>
 				<br>
 
-				<button class="NUMBER">LOG IN WITH PHONE NUMBER</button>
+				<!--Loggin in button-->
+					<button type="submit" class="FACEBOOK"  style="background:#095C92; color:white; border-radius:25px 25px 25px 25px; " >LOG IN WITH FACEBOOK</button>
+				<br>
 
-				<p><u> Trouble Logging In? </u></p>
+					<button type="submit" class="NUMBER" style="color: grey;
+	border-radius: 25px 25px 25px 25px;">LOG IN WITH PHONE NUMBER</button>
+				<br>
 
-				<h3>GET THE APP!</h3>
+					<button type="submit" class="btn btn-link"><u> Trouble Logging In? </u></button>
 
-				<! Apple and Playstore logo on bottom of card     Rember to fix>
+					<h3><b>GET THE APP!</h3></b>
 
-				<button ><img src="apple.png" width="50"></button>
-				<button ><img src="playstore.png" width="50"></button>
+				<!-- Apple and Playstore logo on bottom of card-->
+					<div class="row">
 
-			</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-light" style="border-radius: 15px 15px 15px 15px; width: 300px"><img src="apple.png" width="50"></button>
+					</div>
+
+					<div class="col-md-6">
+						<button type="button" class="btn btn-light"  style="border-radius: 15px 15px 15px 15px; width: 300px"><img src="playstore.png" width="50"></button>
+					</div>
+
+					</div>
+
+				</div>
+	
 		</div>
 
 		 <!-- Optional JavaScript -->
