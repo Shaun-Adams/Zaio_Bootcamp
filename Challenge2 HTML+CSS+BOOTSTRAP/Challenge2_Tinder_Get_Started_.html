@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
-    	.row div{padding: 20px 10px; }
+    	.row div{padding: 10px 10px; }
     	.FACEBOOK {background:#095C92; color:white; border-radius:25px 25px 25px 25px; width: 80%; height: 10%;}
     	.NUMBER{background: white; color: grey; border-radius: 25px 25px 25px 25px; width: 80%; height: 10%;}
     </style>
@@ -22,20 +22,22 @@
 	<body>
 
 		
-			<div class="background">
+			<div class="card">
 				<!--Tinder background image-->
-				<img class="card-img img-fluid" src="Tinder-logo.jpg" alt="Responsive image">
 			</div>
 
 			<!-- white card-->
-			 
-				<div class="container card-img-overlay text-center bg-white w-50 position-absolute margin-top: 25">
+			 <div class="m-100 pb-100">
+				<div class="container card-img-overlay text-center bg-white w-50 ">
+					<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+  					 </button>
 
 					<!--tinder logo-->
 					<img src="tinder.png" width="20%">
 
 				<!--Heading-->
-					<h3><b>GET STARTED</h3></b>
+					<h3><b>GET STARTED</b></h3>
 
 				<!--paragraph with some underline buttons-->
 					<p>By clicking log in, you agree with our 
@@ -47,32 +49,33 @@
 				<br>
 
 				<!--Loggin in button-->
-					<button type="submit" class="FACEBOOK"><b>LOG IN WITH FACEBOOK</b></button>
+					<button type="button" class="FACEBOOK btn-outline-secondary"><b>LOG IN WITH FACEBOOK</b></button>
 				<br>
 				<br>
 
-					<button type="submit" class="NUMBER" style=""><b>LOG IN WITH PHONE NUMBER</b></button>
+					<button type="button" class="NUMBER btn-outline-secondary "><b>LOG IN WITH PHONE NUMBER</b></button>
 				<br>
 				<br>
 
-					<button type="submit" class="btn btn-link"><u> Trouble Logging In? </u></button>
+					<button type="button" class="btn btn-link"><u> Trouble Logging In? </u></button>
 
-					<h3><b>GET THE APP!</h3></b>
+					<h3><b>GET THE APP!</b></h3>
 
 				<!-- Apple and Playstore logo on bottom of card-->
 					<div class="row">
 
 					<div class="col-md-6">
-						<button type="submit" style="background: white; border-radius: 15px 15px 15px 15px; width: 200px"><img src="apple.png" width="50"></button>
+						<button type="button" class="btn btn-outline-secondary" style="background: white; border-radius: 15px 15px 15px 15px; width: 200px"><img src="apple.png" width="50"></button>
 					</div>
 
 					<div class="col-md-6">
-						<button type="submit" style="background: white; border-radius: 15px 15px 15px 15px; width: 200px;"><img src="playstore.png" width="50"></button>
+						<button type="button" class="btn btn-outline-secondary" style="background: white; border-radius: 15px 15px 15px 15px; width: 200px;"><img src="playstore.png" width="50"></button>
 					</div>
 
 					</div>
 
 				</div>
+			</div>
 	
 		</div>
 
