@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<title>Sign Up Site</title> 
+		<link rel="stylesheet" type="text/css" href="Styling.css">
+
+	</head>
+
+	<body>
+		<div class="card">
+			<div class="container card-img-overlay text-center">
+								<h1> Sign Up!</h1>
+								<p> <strong>Please enter your information below:</strong> </p>
+		
+								<form >
+								
+										<div class="row">
+											<div class="col">
+												<label for="Name">Name</label>
+										     	<input type="text" class="form-control" id="Name" placeholder="Name">
+										    </div>
+										    <div class="col">
+										    	<label for="Surname">Surname</label>
+										     	<input type="text" class="form-control" id="Surname" placeholder="Surname">
+										    </div>
+										 </div>
+
+										 <br>
+
+										<div class="form-group">
+										    <label for="age">Age</label>
+										    	<input type="age" class="form-control" id="Age" placeholder="Age">
+										</div>
+
+										 <div class="form-group">
+										    <label for="Email">Email address</label>
+										    	<input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+										    	<small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+										</div>
+
+										<div class="form-group">
+										    <label for="Password">Password</label>
+										    	<input type="password" class="form-control" id="Password" placeholder="Password">
+										</div>
+
+										<div class="form-group">
+										    <label for="ConfirmPassword">Confirm Password</label>
+										    	<input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password">
+										</div>
+
+
+										<div class="form-group form-check">
+										    <input type="checkbox" class="form-check-input" id="Check">
+										    	<label class="form-check-label" for="Check">Check me out</label>
+										</div>
+
+										<button type="button" class="btn btn-primary" onclick="return Validate()">Submit</button>
+		  											
+								</form>
+			</div>
+
+		</div>
+
+		<script type="/home/menace/Documents/web dev/Zaio Bootcamp/Challenge/Level 3 Challenges/Auth Using Arrays/untitled.js"></script>
+
+		<script type="text/javascript">
+		function Validate() {
+        var password = document.getElementById("Password").value;
+        var confirmPassword = document.getElementById("ConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+		</script>
+
+
+	
+		<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+	</body>
+
+</html>
