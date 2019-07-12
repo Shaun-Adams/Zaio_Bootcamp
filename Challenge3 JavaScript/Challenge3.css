@@ -1,0 +1,49 @@
+.Box{
+	width: 100%;
+	height: 700px;
+	border: 1px solid;
+	margin: 10px;
+}
+
+.blue{
+	width: 450px;
+	height: 100px; 
+	padding: 50px;
+	margin: 80px;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+.green{
+	width: 450px;
+	height: 100px;   
+	padding: 50px;
+	margin: 80px;
+	border: 1px solid green;
+	text-align: center;
+}
+
+.red{
+	width: 450px;
+	height: 100px;  
+	padding: 50px;
+	margin: 80px;
+	border: 1px solid red;
+	text-align: center;
+}
+
+.box2{
+	width: 550px;
+	height: 500px; 
+	padding: 50px; 
+	margin: 60px;
+	border: 1px solid black;	
+}
+
+.textbox{
+	margin-top: 60px;
+}
+
+.cal{
+	margin-top: 40px;
+}
