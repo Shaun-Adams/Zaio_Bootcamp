@@ -18,13 +18,15 @@
 								<h1> Sign Up!</h1>
 								<p> <strong>Please enter your information below:</strong> </p>
 		
-								<form >
+								<form id="my-form" name="myform" action="#" >
 								
 										<div class="row">
+
 											<div class="col">
 												<label for="Name">Name</label>
 										     	<input type="text" class="form-control" id="Name" placeholder="Name">
 										    </div>
+
 										    <div class="col">
 										    	<label for="Surname">Surname</label>
 										     	<input type="text" class="form-control" id="Surname" placeholder="Surname">
@@ -40,18 +42,18 @@
 
 										 <div class="form-group">
 										    <label for="Email">Email address</label>
-										    	<input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+										    	<input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
 										    	<small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
 										</div>
 
 										<div class="form-group">
 										    <label for="Password">Password</label>
-										    	<input type="password" class="form-control" id="Password" placeholder="Password">
+										    	<input type="password" class="form-control" id="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 										</div>
 
 										<div class="form-group">
 										    <label for="ConfirmPassword">Confirm Password</label>
-										    	<input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password">
+										    	<input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 										</div>
 
 
@@ -60,26 +62,42 @@
 										    	<label class="form-check-label" for="Check">Check me out</label>
 										</div>
 
-										<button type="button" class="btn btn-primary" onclick="return Validate()">Submit</button>
+										<button type="button" class="btn btn-primary" id="btnSubmit" value="Subtmit" onclick="return Validate()">Submit</button> 
 		  											
 								</form>
+
+						
+								
 			</div>
 
 		</div>
 
-		<script type="/home/menace/Documents/web dev/Zaio Bootcamp/Challenge/Level 3 Challenges/Auth Using Arrays/untitled.js"></script>
-
 		<script type="text/javascript">
-		function Validate() {
-        var password = document.getElementById("Password").value;
-        var confirmPassword = document.getElementById("ConfirmPassword").value;
-        if (password != confirmPassword) {
-            alert("Passwords do not match.");
-            return false;
-        }
-        return true;
-    }
+			function Validate(){
+				var password = document.getElementById("Password").value;
+				var confirmPassword = document.getElementById("ConfirmPassword").value;
+				if (password!= confirmPassword) {
+					alert("Password do not match.");
+					return false;
+				}
+				alert("Success");
+				var Dict =[
+					document.getElementById("Name").value,
+					document.getElementById("Surname").value,
+					document.getElementById("Age").value,
+					document.getElementById("Email").value,
+					document.getElementById("Password").value,
+					document.getElementById("ConfirmPassword").value
+								];
+				console.log(Dict.length);
+				console.log(Dict[0]);
+				console.log(Dict[3]);
+				console.log(Dict[5]);
+				return true;
+			}
 		</script>
+		<!-- <script src="app.js" charset="utf-8"></script>
+		</script> --> 
 
 
 	
